@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #a08585;
+}
+
+.game-title {
+  position: flex;
+  top: 20px; /* Yukarıya 20 piksel boşluk bırak */
+  left: 50%;
+  z-index: 1;
+  background-color: #a29946;
+  padding: 10px;
+  border: 1px solid #3d3131;
+}
+
+#parentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#restartButton {
+  width: 100px;
+  margin-top: 20px;
+  background-color: #a29946;
+  padding: 10px;
+  border: 4px double black;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(15, 30px);
+  grid-gap: 4px;
+  border: 2px solid #000;
+  background-color: #6749cb;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background-color: #738c9e;
+}
+
+.snake {
+  background-color: #c63e3e;
+}
+
+.food {
+  background-color: #21f367;
+}
