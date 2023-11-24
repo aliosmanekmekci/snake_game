@@ -4,7 +4,7 @@ This repository contains a snake game written using JavaScript (vanilla JS).
 
 # Website Link
 
-
+https://aliosmanekmekci.github.io/vanilla-js-snake-game/
 
 ## About the Game
 
