@@ -107,7 +107,7 @@ function checkGameStatus() {
 
   if (crash()) {
     clearInterval(gameInterval);
-    document.getElementById("gameTitle").textContent = "Oyun bitti, skorun: " + snake.length;
+    document.getElementById("gameTitle").textContent = "Oyun bitti, skorun: " + snake.length - 1;
     const cells = document.querySelectorAll(".cell");
     cells.forEach((cell) => cell.classList.remove("food"));
     cells.forEach((cell) => cell.classList.remove("snake"));
@@ -161,7 +161,7 @@ function initializeGameBoard() {
 }
 
 function startGameLoop() {
-  gameInterval = setInterval(checkGameStatus, 100);
+  gameInterval = setInterval(checkGameStatus, 300);
 }
 
 function init() {
